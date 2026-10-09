@@ -3,7 +3,7 @@ y = x
 y.append(4)
 print(x)
 
-Réponse : [1, 2, 3]
+Réponse : [1, 2, 3, 4]
 
 ---------------------------------------------------------------------------------
 
@@ -15,13 +15,13 @@ Réponse : 3, 1, 3.5
 s = "data engineer"
 print(s[0:4], s[-3:], len(s))
 
-Réponse : data, data engine, 13
+Réponse : data, eer, 13
 ---------------------------------------------------------------------------------
 
 d = {"a": 1, "b": 2}
 print(d.get("c", 0), "a" in d, list(d.keys()))
 
-Réponse : ?
+Réponse : 0, true, [a, b]
 ---------------------------------------------------------------------------------
 
 nombres = [3, 8, 1, 9, 4]
@@ -45,7 +45,7 @@ except ValueError:
 finally:
     print("fin")
 
-Réponse: fin
+Réponse: erreur puis fin
 -------------------------------------------------------------------------------
 
 ventes = [("Lyon", 50), ("Paris", 30), ("Lyon", 20)]
@@ -60,4 +60,4 @@ Réponse: {"Lyon" : 70 ; "Paris" : 30 }
 notes = {"Ana": 12, "Bob": 17, "Cy": 9}
 print(sorted(notes, key=notes.get, reverse=True))
 
-Réponse : {"Bob" : 17, "Ana": 12, "Cy": 9}
+Réponse : [Bob, Ana, Cy]
