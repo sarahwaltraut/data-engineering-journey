@@ -1,0 +1,10 @@
+id,date,client,ville,categorie,montant
+1,2026-09-01,Alice,Lyon,Livres,25.50
+2,2026-09-01,Bruno,Paris,Jeux,60
+3,2026-09-02,Alice,Lyon,Jeux,40
+4,2026-09-03,Chloé,Limoges,Livres,
+5,2026-09-03,Bruno,Paris,Livres,abc
+6,2026-09-04,David,Limoges,Musique,15
+7,2026-09-04,Alice,Lyon,Musique,30
+3,2026-09-02,Alice,Lyon,Jeux,40
+8,2026-09-05,Chloé,Limoges,Jeux,55.25
