@@ -1,3 +1,5 @@
+# JOUR 1
+
 ![alt text](image.png)
 Commande       |	Ce qu’elle fait	| Moyen de s’en souvenir
 pwd	           | affiche où je suis	| print working directory
@@ -22,6 +24,8 @@ Tu es dans /home/sarah/formation/semaine1/notes.
 - Ton dépôt Git contient un dossier .git et un fichier .gitignore. Pourquoi ne les vois-tu pas avec un simple ls ? Parce que ls ne permet pas d'afficher des fichiers cachés. Il faudrait plutôt ls -a.
 - Pourquoi rien ne s’affiche quand tu tapes ton mot de passe avec sudo ? c'est une mesure de sécurité linux.
  --------------------------------------------------------------------------------------------
+
+# JOUR 2
 
 Exercice 4 : écrire dans des fichiers
 Dans ~/formation/semaine1/notes, crée un journal avec echo :
@@ -58,3 +62,36 @@ bash
 Qu’est-ce que head -n 1 ventes.csv affiche, et pourquoi est-ce utile ? ça affiche la 1èere ligne c'est à dire l'en-tête du fichier avec les noms de colonne. Ca permet de savoir la structure du fichier sans avoir à afficher tout le fichier, ce qui peut être embêtant quand le fichier est volumineux.
 Ton collègue tape rm -rf ~ /formation/data/brut. Que se passe-t-il exactement ? Ca supprime tous les dossiers du chemin sans demander une vérification.
 Que liste ls data/*/*.csv ? ça liste tous les fichiers du dossier data qui ont l'extension .csv.
+
+---------------------------------------------------------------------------------------------
+# JOUR 3
+
+Niveau 1 : compter et chercher
+Combien de lignes le fichier commandes.csv contient-il au total ? Combien de commandes, c’est-à-dire sans l’en-tête ? wc -l commandes.csv puis tail -n +2 commandes.csv | wc -l
+Affiche toutes les commandes annulées, puis compte-les. tail -n +2 commandes.csv | grep annulee puis tail -n +2 commandes.csv | grep -ci annulee
+Combien de commandes viennent de Limoges ? Essaie avec grep -c Limoges, puis avec grep -ci limoges. Pourquoi les résultats diffèrent-ils ? Les résultats sont différents parce que la première commande est sensible à la casse donc les lignes où limoges est écrit avec L majuscule ne sont pas comptées.
+Combien de commandes ne sont pas livrées ? tail -n +2 commandes.csv | grep -cvi livree
+
+
+Niveau 2 : découper et trier
+Affiche la liste des villes distinctes, sans l’en-tête. Que remarques-tu ? cut -d',' -f4 commandes.csv | tail -n +2 | sort | uniq . Je remarque que Limoges apparait deux fois à cause de la casse.
+Affiche le nombre de commandes par ville, du plus grand au plus petit. cut -d',' -f4 commandes.csv | tail -n +2 | sort | uniq -c | sort -rn
+Combien de clients différents ont passé commande ? cut -d',' -f3 commandes.csv | tail -n +2 | sort | uniq -c | wc -l
+Affiche les 3 commandes avec les plus grosses quantités. Regarde bien le résultat : quel problème vois-tu ? tail -n +2 commandes.csv | sort -t',' -k7 -rn | head -n 3 . Le problème est qu'on a la même commande deux fois.
+
+
+Niveau 3 : le détective
+Trouve la (ou les) lignes en double dans commandes.csv. tail -n +2 commandes.csv | sort -t ',' -k1 -n | uniq -d
+Dans pipeline.log : combien y a-t-il d’erreurs (ERROR), et à quelles lignes ?  grep -c ERROR pipeline.log puis  grep -n ERROR pipeline.log
+Affiche toutes les lignes du log qui ne sont pas des INFO, c’est-à-dire les alertes et les erreurs. grep -v INFO pipeline.log
+Enregistre les erreurs dans un fichier erreurs.txt, puis ajoute les avertissements (WARNING) à ce même fichier, sans effacer les erreurs. Vérifie avec cat. grep ERROR pipeline.log > erreurs.txt puis grep WARNING pipeline.log >> erreurs.txt
+
+Reprends le défi d’hier, les lignes 51 à 55 de ~/formation/nombres.txt, mais cette fois en une seule ligne et sans fichier temporaire.
+
+5. La réflexion (10 min)
+
+Réponds en quelques phrases :
+
+Quels sont les deux problèmes de qualité que tu as trouvés dans commandes.csv ? Pour chacun, quelle conséquence aurait-il sur un rapport envoyé à un directeur ? L'id de la commande n'était pas unique car il y avait un doublon. Le format de la ville n'était pas forcément le même, on avait un Limoges complètement en minuscule, ce qui n'est pas en accord avec les formats des autres villes. Il pourrait y avoir des erreurs de calculs. 
+
+Le log contient la ligne WARNING Doublon détecté : commande 110. Fais le lien avec ce que tu as trouvé à la question 9. À ton avis, à quelle étape d’un pipeline faudrait-il régler ce problème ? On devrait régler ce problème lors de la transformation des données ( T pour transform)
