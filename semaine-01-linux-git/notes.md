@@ -94,4 +94,4 @@ Réponds en quelques phrases :
 
 Quels sont les deux problèmes de qualité que tu as trouvés dans commandes.csv ? Pour chacun, quelle conséquence aurait-il sur un rapport envoyé à un directeur ? L'id de la commande n'était pas unique car il y avait un doublon. Le format de la ville n'était pas forcément le même, on avait un Limoges complètement en minuscule, ce qui n'est pas en accord avec les formats des autres villes. Il pourrait y avoir des erreurs de calculs. 
 
-Le log contient la ligne WARNING Doublon détecté : commande 110. Fais le lien avec ce que tu as trouvé à la question 9. À ton avis, à quelle étape d’un pipeline faudrait-il régler ce problème ? On devrait régler ce problème lors de la transformation des données ( T pour transform)
+Le log contient la ligne WARNING Doublon détecté : commande 110. Fais le lien avec ce que tu as trouvé à la question 9. À ton avis, à quelle étape d’un pipeline faudrait-il régler ce problème ? On devrait régler ce problème lors de la transformation des données ( T pour transform)Dépôt déplacé dans WSL le 2026-10-17
