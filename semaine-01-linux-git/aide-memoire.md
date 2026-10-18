@@ -1,2 +1,2 @@
-cd, cp, mv, cat, rm, ls, mkdir, touch
+# Aide-mémoire du terminal Linux pour data engineer
 grep, cut, sort, uniq, l
