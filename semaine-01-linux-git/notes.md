@@ -95,3 +95,21 @@ Réponds en quelques phrases :
 Quels sont les deux problèmes de qualité que tu as trouvés dans commandes.csv ? Pour chacun, quelle conséquence aurait-il sur un rapport envoyé à un directeur ? L'id de la commande n'était pas unique car il y avait un doublon. Le format de la ville n'était pas forcément le même, on avait un Limoges complètement en minuscule, ce qui n'est pas en accord avec les formats des autres villes. Il pourrait y avoir des erreurs de calculs. 
 
 Le log contient la ligne WARNING Doublon détecté : commande 110. Fais le lien avec ce que tu as trouvé à la question 9. À ton avis, à quelle étape d’un pipeline faudrait-il régler ce problème ? On devrait régler ce problème lors de la transformation des données ( T pour transform)Dépôt déplacé dans WSL le 2026-10-17
+
+---------------------------------------------------------------------------
+# JOUR 4
+
+Tu modifies a.py et b.py, puis tu fais git add a.py et git commit. Que contient le commit ? Dans quel état est b.py ? Le commit contient les modification de a.py. b.py reste inchangé.
+
+Quelle est la différence entre git diff et git diff --staged ? git diff permet de voir les modifications qui ne sont pas encore passés au git add, et git diff --staged montre les modifications qui attendent le commmit.
+
+Tu as fait 3 commits, mais pas de push. Ton ordinateur tombe en panne. Qu’est-ce qui est perdu ? Je perd les modifications que je n'ai pas commit.
+Tu as poussé un commit qui casse le pipeline de ton équipe. Faut-il utiliser --amend ou revert ? Pourquoi ? il faut utiliser revert car ce n'est pas le nom du commit que je veux changer.
+
+Que fait git restore fichier.py, et pourquoi est-ce dangereux ? Elle détruit les modifications non commitées sir fichier.py.
+Pourquoi .env doit-il toujours figurer dans le .gitignore ? Parce qu'il contient des informations qui ne doivent pas être poussées sur github comme les autres fichers.
+
+Classe ces messages de commit du meilleur au pire, et explique pourquoi : fix, Corrige le doublon de la commande 110 dans le nettoyage, nettoyage, WIP.
+
+Corrige le doublon de la commande 110 dans le nettoyage -> nettoyage -> fix -> WIP
+Je classe les commits en fonction de ceux avec le nom le plus complet
