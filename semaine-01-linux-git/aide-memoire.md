@@ -1,2 +1,2 @@
-cd, cp, mv, cat, rm, ls, mkdir, touch
+# Mes commandes essentielles
 grep, cut, sort, uniq, l
