@@ -103,8 +103,8 @@ Tu modifies a.py et b.py, puis tu fais git add a.py et git commit. Que contient 
 
 Quelle est la différence entre git diff et git diff --staged ? git diff permet de voir les modifications qui ne sont pas encore passés au git add, et git diff --staged montre les modifications qui attendent le commmit.
 
-Tu as fait 3 commits, mais pas de push. Ton ordinateur tombe en panne. Qu’est-ce qui est perdu ? Je perd les modifications que je n'ai pas commit.
-Tu as poussé un commit qui casse le pipeline de ton équipe. Faut-il utiliser --amend ou revert ? Pourquoi ? il faut utiliser revert car ce n'est pas le nom du commit que je veux changer.
+Tu as fait 3 commits, mais pas de push. Ton ordinateur tombe en panne. Qu’est-ce qui est perdu ? Je perd Toutes les modifications, même les 3 commits.
+Tu as poussé un commit qui casse le pipeline de ton équipe. Faut-il utiliser --amend ou revert ? Pourquoi ? il faut utiliser revert car cela crée juste un commit qui remplace l'autre, et ça évitera les conflits 
 
 Que fait git restore fichier.py, et pourquoi est-ce dangereux ? Elle détruit les modifications non commitées sir fichier.py.
 Pourquoi .env doit-il toujours figurer dans le .gitignore ? Parce qu'il contient des informations qui ne doivent pas être poussées sur github comme les autres fichers.
@@ -113,3 +113,20 @@ Classe ces messages de commit du meilleur au pire, et explique pourquoi : fix, C
 
 Corrige le doublon de la commande 110 dans le nettoyage -> nettoyage -> fix -> WIP
 Je classe les commits en fonction de ceux avec le nom le plus complet
+
+-------------------------------------------------------------------------------------------------------------------------------------
+# JOUR 5
+
+Tu es sur main et tu tapes git merge ma-branche. Qu’est-ce qui est fusionné dans quoi ? Ma branche vient se fusionner dans main, c'est main qui reçoit.
+
+Pourquoi ton fichier a-t-il « disparu » quand tu es revenu sur main à la partie 2 ? Parce que  j'avais modidié sur ma branche et que je n'avais pas encore fusionné avec main.
+
+Quelle est la différence entre une fusion « fast-forward » et une fusion avec un commit de fusion ? Dans quel cas obtient-on chacune ? le fast-forward  c'est dans le cas où le main n'a pas bougé pendant les modifications, dans ce cas git avance juste l'étiquette de main jusqu'au dernier commit. Un commit de fusion quand à lieu c'est dans le cas où le main a également bougé pendant les commits.
+
+Dans quelle situation exacte un conflit se produit-il ? Lorsqu'une même ligne d'un fichier est modifiée de manière différente sur plusieurs branches.
+
+Tu as résolu un conflit dans VS Code, mais tu as oublié de supprimer la ligne =======. Que se passe-t-il ? Il n'y a pas d'erreur, git considère le conflit comme résolu. Par contre cela glisse des lignes parasite dans le fichier.
+
+Pourquoi les entreprises interdisent-elles souvent de pousser directement sur main ? Qu’apporte une pull request ? main alimente la production : entre le moment où l’erreur arrive et celui où on la corrige, les pipelines tournent avec, et les rapports du lendemain peuvent être faux. La pull request sert à empêcher l’erreur d’arriver, plutôt qu’à devoir la réparer après coup. Et elle permet aussi de lancer des tests automatiques avant la fusion. La pull request permet aux collaborateurs de relire et valider les changements avant de pousser sur main.
+
+Après avoir fusionné une PR sur GitHub, pourquoi faut-il faire git pull sur ton ordinateur ? Parce qu'en local je suis encore en retard, je n'ai pas encore les modifs qui ont été faites sur le serveur donc je fais pull pour récupérer.
