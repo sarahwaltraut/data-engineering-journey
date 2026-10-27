@@ -1,0 +1,9 @@
+{
+  "nb_commandes": 20,
+  "ca_par_ville": {
+    "Lyon": 969.0,
+    "Paris": 540.0,
+    "Limoges": 244.0,
+    "Bordeaux": 390.0
+  }
+}

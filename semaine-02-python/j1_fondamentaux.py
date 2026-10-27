@@ -48,4 +48,4 @@ def compter_par_ville(villes):
 
 assert compter_par_ville(["Lyon", "limoges", "Limoges ", " paris", None, ""]) == {"Lyon": 1, "Limoges": 2, "Paris": 1}
 
-print("Tous les tests passent ✅")
+print("Tous les tests passent ")

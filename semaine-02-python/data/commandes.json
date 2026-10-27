@@ -1,0 +1,222 @@
+[
+  {
+    "id": 101,
+    "date": "2026-10-01",
+    "client": "Alice",
+    "ville": "Lyon",
+    "produit": "Clavier",
+    "categorie": "Informatique",
+    "quantite": 1,
+    "prix": 45.0,
+    "statut": "livree"
+  },
+  {
+    "id": 102,
+    "date": "2026-10-01",
+    "client": "Bruno",
+    "ville": "Paris",
+    "produit": "Casque",
+    "categorie": "Audio",
+    "quantite": 2,
+    "prix": 80.0,
+    "statut": "livree"
+  },
+  {
+    "id": 103,
+    "date": "2026-10-02",
+    "client": "Chloe",
+    "ville": "Limoges",
+    "produit": "Roman",
+    "categorie": "Livres",
+    "quantite": 3,
+    "prix": 15.0,
+    "statut": "livree"
+  },
+  {
+    "id": 104,
+    "date": "2026-10-02",
+    "client": "David",
+    "ville": "Limoges",
+    "produit": "Souris",
+    "categorie": "Informatique",
+    "quantite": 1,
+    "prix": 20.0,
+    "statut": "annulee"
+  },
+  {
+    "id": 105,
+    "date": "2026-10-03",
+    "client": "Emma",
+    "ville": "Paris",
+    "produit": "BD",
+    "categorie": "Livres",
+    "quantite": 5,
+    "prix": 12.0,
+    "statut": "livree"
+  },
+  {
+    "id": 106,
+    "date": "2026-10-03",
+    "client": "Farid",
+    "ville": "Bordeaux",
+    "produit": "Enceinte",
+    "categorie": "Audio",
+    "quantite": 1,
+    "prix": 60.0,
+    "statut": "en_cours"
+  },
+  {
+    "id": 107,
+    "date": "2026-10-04",
+    "client": "Alice",
+    "ville": "Lyon",
+    "produit": "Souris",
+    "categorie": "Informatique",
+    "quantite": 2,
+    "prix": 20.0,
+    "statut": "livree"
+  },
+  {
+    "id": 108,
+    "date": "2026-10-04",
+    "client": "Gina",
+    "ville": "Limoges",
+    "produit": "Casque",
+    "categorie": "Audio",
+    "quantite": 1,
+    "prix": 80.0,
+    "statut": "livree"
+  },
+  {
+    "id": 109,
+    "date": "2026-10-05",
+    "client": "Bruno",
+    "ville": "Paris",
+    "produit": "Roman",
+    "categorie": "Livres",
+    "quantite": 4,
+    "prix": 15.0,
+    "statut": "annulee"
+  },
+  {
+    "id": 110,
+    "date": "2026-10-05",
+    "client": "Hugo",
+    "ville": "Lyon",
+    "produit": "Clavier",
+    "categorie": "Informatique",
+    "quantite": 8,
+    "prix": 45.0,
+    "statut": "livree"
+  },
+  {
+    "id": 111,
+    "date": "2026-10-06",
+    "client": "Chloe",
+    "ville": "Limoges",
+    "produit": "BD",
+    "categorie": "Livres",
+    "quantite": 2,
+    "prix": 12.0,
+    "statut": "livree"
+  },
+  {
+    "id": 112,
+    "date": "2026-10-06",
+    "client": "Emma",
+    "ville": "Paris",
+    "produit": "Enceinte",
+    "categorie": "Audio",
+    "quantite": 1,
+    "prix": 60.0,
+    "statut": "en_cours"
+  },
+  {
+    "id": 113,
+    "date": "2026-10-07",
+    "client": "Ines",
+    "ville": "Bordeaux",
+    "produit": "Roman",
+    "categorie": "Livres",
+    "quantite": 6,
+    "prix": 15.0,
+    "statut": "livree"
+  },
+  {
+    "id": 114,
+    "date": "2026-10-07",
+    "client": "David",
+    "ville": "Limoges",
+    "produit": "Clavier",
+    "categorie": "Informatique",
+    "quantite": 1,
+    "prix": 45.0,
+    "statut": "livree"
+  },
+  {
+    "id": 115,
+    "date": "2026-10-08",
+    "client": "Farid",
+    "ville": "Bordeaux",
+    "produit": "Casque",
+    "categorie": "Audio",
+    "quantite": 3,
+    "prix": 80.0,
+    "statut": "annulee"
+  },
+  {
+    "id": 110,
+    "date": "2026-10-05",
+    "client": "Hugo",
+    "ville": "Lyon",
+    "produit": "Clavier",
+    "categorie": "Informatique",
+    "quantite": 8,
+    "prix": 45.0,
+    "statut": "livree"
+  },
+  {
+    "id": 116,
+    "date": "2026-10-08",
+    "client": "Jules",
+    "ville": "Paris",
+    "produit": "Souris",
+    "categorie": "Informatique",
+    "quantite": 10,
+    "prix": 20.0,
+    "statut": "livree"
+  },
+  {
+    "id": 117,
+    "date": "2026-10-09",
+    "client": "Gina",
+    "ville": "Limoges",
+    "produit": "Roman",
+    "categorie": "Livres",
+    "quantite": 2,
+    "prix": 15.0,
+    "statut": "en_cours"
+  },
+  {
+    "id": 118,
+    "date": "2026-10-09",
+    "client": "Alice",
+    "ville": "Lyon",
+    "produit": "Casque",
+    "categorie": "Audio",
+    "quantite": 1,
+    "prix": 80.0,
+    "statut": "livree"
+  },
+  {
+    "id": 119,
+    "date": "2026-10-10",
+    "client": "Hugo",
+    "ville": "Lyon",
+    "produit": "BD",
+    "categorie": "Livres",
+    "quantite": 7,
+    "prix": 12.0,
+    "statut": "livree"
+  }
+]
