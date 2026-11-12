@@ -1,0 +1,15 @@
+id,date,client,ville,produit,categorie,quantite,prix,statut
+201,2026-10-12,Alice,Lyon,Clavier,Informatique,1,45,livree
+202,2026-10-12,Bruno,paris,Casque,Audio,2,"79,90",livree
+203,2026-10-13,Chloe,Limoges,Roman,Livres,abc,15,livree
+204,2026-10-13,David,Limoges,Souris,Informatique,1,,en_cours
+205,2026-13-14,Emma,Paris,BD,Livres,5,12,livree
+206,2026-10-14,Farid,,Enceinte,Audio,1,60,livree
+207,2026-10-15,Gina,Bordeaux,Casque,Audio,-2,80,livree
+208,2026-10-15,Hugo,Lyon,Clavier,Informatique,3,45,rembourse
+209,2026-10-16,Ines, bordeaux ,Roman,Livres,4,15,annulee
+201,2026-10-12,Alice,Lyon,Clavier,Informatique,1,45,livree
+210,2026-10-17,Jules,Paris,Souris,Informatique,10,20,livree
+21x,2026-10-17,Karim,Lyon,BD,Livres,2,12,livree
+212,17/10/2026,Lena,Limoges,Casque,Audio,1,80,en_cours
+213,2026-10-18,Malo,Lyon,Enceinte,Audio,2,60,livree

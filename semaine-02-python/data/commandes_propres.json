@@ -1,0 +1,57 @@
+[
+  {
+    "id": 201,
+    "date": "2026-10-12",
+    "client": "Alice",
+    "ville": "Lyon",
+    "produit": "Clavier",
+    "categorie": "Informatique",
+    "quantite": 1,
+    "prix": 45.0,
+    "statut": "livree"
+  },
+  {
+    "id": 202,
+    "date": "2026-10-12",
+    "client": "Bruno",
+    "ville": "Paris",
+    "produit": "Casque",
+    "categorie": "Audio",
+    "quantite": 2,
+    "prix": 79.9,
+    "statut": "livree"
+  },
+  {
+    "id": 209,
+    "date": "2026-10-16",
+    "client": "Ines",
+    "ville": "Bordeaux",
+    "produit": "Roman",
+    "categorie": "Livres",
+    "quantite": 4,
+    "prix": 15.0,
+    "statut": "annulee"
+  },
+  {
+    "id": 210,
+    "date": "2026-10-17",
+    "client": "Jules",
+    "ville": "Paris",
+    "produit": "Souris",
+    "categorie": "Informatique",
+    "quantite": 10,
+    "prix": 20.0,
+    "statut": "livree"
+  },
+  {
+    "id": 213,
+    "date": "2026-10-18",
+    "client": "Malo",
+    "ville": "Lyon",
+    "produit": "Enceinte",
+    "categorie": "Audio",
+    "quantite": 2,
+    "prix": 60.0,
+    "statut": "livree"
+  }
+]

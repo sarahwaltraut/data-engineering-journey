@@ -1,0 +1,128 @@
+[
+  {
+    "ligne": {
+      "id": "203",
+      "date": "2026-10-13",
+      "client": "Chloe",
+      "ville": "Limoges",
+      "produit": "Roman",
+      "categorie": "Livres",
+      "quantite": "abc",
+      "prix": "15",
+      "statut": "livree"
+    },
+    "raison": "quantite invalide"
+  },
+  {
+    "ligne": {
+      "id": "204",
+      "date": "2026-10-13",
+      "client": "David",
+      "ville": "Limoges",
+      "produit": "Souris",
+      "categorie": "Informatique",
+      "quantite": "1",
+      "prix": "",
+      "statut": "en_cours"
+    },
+    "raison": "prix invalide"
+  },
+  {
+    "ligne": {
+      "id": "205",
+      "date": "2026-13-14",
+      "client": "Emma",
+      "ville": "Paris",
+      "produit": "BD",
+      "categorie": "Livres",
+      "quantite": "5",
+      "prix": "12",
+      "statut": "livree"
+    },
+    "raison": "date invalide"
+  },
+  {
+    "ligne": {
+      "id": "206",
+      "date": "2026-10-14",
+      "client": "Farid",
+      "ville": "",
+      "produit": "Enceinte",
+      "categorie": "Audio",
+      "quantite": "1",
+      "prix": "60",
+      "statut": "livree"
+    },
+    "raison": "ville manquante"
+  },
+  {
+    "ligne": {
+      "id": "207",
+      "date": "2026-10-15",
+      "client": "Gina",
+      "ville": "Bordeaux",
+      "produit": "Casque",
+      "categorie": "Audio",
+      "quantite": "-2",
+      "prix": "80",
+      "statut": "livree"
+    },
+    "raison": "quantite invalide"
+  },
+  {
+    "ligne": {
+      "id": "208",
+      "date": "2026-10-15",
+      "client": "Hugo",
+      "ville": "Lyon",
+      "produit": "Clavier",
+      "categorie": "Informatique",
+      "quantite": "3",
+      "prix": "45",
+      "statut": "rembourse"
+    },
+    "raison": "statut inconnu"
+  },
+  {
+    "ligne": {
+      "id": "201",
+      "date": "2026-10-12",
+      "client": "Alice",
+      "ville": "Lyon",
+      "produit": "Clavier",
+      "categorie": "Informatique",
+      "quantite": "1",
+      "prix": "45",
+      "statut": "livree"
+    },
+    "raison": "doublon"
+  },
+  {
+    "ligne": {
+      "id": "21x",
+      "date": "2026-10-17",
+      "client": "Karim",
+      "ville": "Lyon",
+      "produit": "BD",
+      "categorie": "Livres",
+      "quantite": "2",
+      "prix": "12",
+      "statut": "livree"
+    },
+    "raison": "id invalide"
+  },
+  {
+    "ligne": {
+      "id": "212",
+      "date": "17/10/2026",
+      "client": "Lena",
+      "ville": "Limoges",
+      "produit": "Casque",
+      "categorie": "Audio",
+      "quantite": "1",
+      "prix": "80",
+      "statut": "en_cours"
+    },
+    "raison": "date invalide"
+  }
+]
