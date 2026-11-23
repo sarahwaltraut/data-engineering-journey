@@ -220,3 +220,4 @@ __marimo__/
 .streamlit/secrets.toml
 
 semaine-01-linux-git/projet-rapport/rapports/
+*.duckdb
